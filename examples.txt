@@ -1,0 +1,117 @@
+4 realistic and diverse example requests** you can use to test your RAG + API.
+
+---
+
+### ✅ **Test Case 1:**
+
+**Patient:** Older female with mild vitals
+
+```json
+{
+  "patient": {
+    "age": "75-84",
+    "gender": "F",
+    "median_heartrate": 65.0,
+    "median_resprate": 18.0,
+    "median_temp": 98.2,
+    "median_sysbp": 121.0,
+    "median_diasbp": 61.0,
+    "median_wbc": 8.0,
+    "median_hgb": 9400.0,
+    "median_plt": 324.0,
+    "median_na": 141.0,
+    "median_hco3": 22.0,
+    "median_bun": 40.0,
+    "median_cr": 1.48
+  },
+  "question": "Why was Ertapenem chosen for this elderly female patient?"
+}
+```
+
+---
+
+### ✅ **Test Case 2:**
+
+**Patient:** Middle-aged male with moderately abnormal WBC
+
+```json
+{
+  "patient": {
+    "age": "55-64",
+    "gender": "M",
+    "median_heartrate": 89.0,
+    "median_resprate": 19.0,
+    "median_temp": 102.2,
+    "median_sysbp": 124.0,
+    "median_diasbp": 74.0,
+    "median_wbc": 17.2,
+    "median_hgb": 14500.0,
+    "median_plt": 222.0,
+    "median_na": 132.0,
+    "median_hco3": 21.0,
+    "median_bun": 28.0,
+    "median_cr": 1.47
+  },
+  "question": "Is Ertapenem effective in cases like this?"
+}
+```
+
+---
+
+### ✅ **Test Case 3:**
+
+**Patient:** Male in early senior age, moderately high WBC and mild vitals
+
+```json
+{
+  "patient": {
+    "age": "65-74",
+    "gender": "M",
+    "median_heartrate": 65.0,
+    "median_resprate": 16.0,
+    "median_temp": 97.3,
+    "median_sysbp": 93.0,
+    "median_diasbp": 53.0,
+    "median_wbc": 15.0,
+    "median_hgb": 9500.0,
+    "median_plt": 210.0,
+    "median_na": 132.0,
+    "median_hco3": 23.0,
+    "median_bun": 25.0,
+    "median_cr": 0.98
+  },
+  "question": "Why did the model rank Ertapenem higher than Levofloxacin?"
+}
+```
+
+---
+
+### ✅ **Test Case 4:**
+
+**Patient:** High temp, high WBC, high creatinine (suggests severe infection)
+
+```json
+{
+  "patient": {
+    "age": "75-84",
+    "gender": "F",
+    "median_heartrate": 73.0,
+    "median_resprate": 18.0,
+    "median_temp": 101.5,
+    "median_sysbp": 110.0,
+    "median_diasbp": 70.0,
+    "median_wbc": 18.0,
+    "median_hgb": 11000.0,
+    "median_plt": 230.0,
+    "median_na": 140.0,
+    "median_hco3": 20.0,
+    "median_bun": 33.0,
+    "median_cr": 1.9
+  },
+  "question": "Does this profile support using a broad-spectrum drug like Ertapenem?"
+}
+```
+
+---
+
+Would you like me to also generate edge cases for testing error handling or missing fields?
