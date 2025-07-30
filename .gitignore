@@ -1,1 +1,2 @@
 models/*.gguf
+models/lightgbm_ovr_models.pkl
